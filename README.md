@@ -1,28 +1,25 @@
-📊 Threat Intelligence IP Analyzer
-
+# 📊 Threat Intelligence IP Analyzer
 
 This project performs geolocation and threat intelligence analysis on a list of malicious IP addresses using:
 
-1.AbuseIPDB
+- [AbuseIPDB](https://www.abuseipdb.com/)
+- [VirusTotal](https://www.virustotal.com/)
+- [AlienVault OTX](https://otx.alienvault.com/)
+- MITRE ATT&CK Mapping (via OTX tags)
 
-2.VirusTotal
+## 🔍 Features
 
-3.AlienVault OTX
+- Queries malicious IPs from AbuseIPDB, VirusTotal, and AlienVault OTX.
+- Extracts and correlates:
+  - Abuse confidence score
+  - VirusTotal malicious detection count
+  - MITRE ATT&CK Techniques (from OTX tags)
+  - Malware families, threat tags, references, and WHOIS data
+- Outputs results to a CSV (`IP_ANALYSIS.csv`) for further analysis.
 
-4.MITRE ATT&CK Mapping (via OTX tags)
+## 📁 Example Output
 
-🔍 Features
-Queries malicious IPs across AbuseIPDB, VirusTotal, and AlienVault OTX.
+| IP            | AbuseIPDB Score | VirusTotal Malicious Count | Malware Families | Threat Tags     | MITRE IDs      | WHOIS Country | WHOIS Email        |
+|---------------|------------------|-----------------------------|------------------|------------------|----------------|----------------|---------------------|
+| 27.81.7.52    | 85               | 12                          | Emotet, Trickbot | botnet, trojan   | T1071, T1059   | RU             | example@mail.com    |
 
-Extracts:
-Abuse confidence score
-
-VirusTotal malicious detection count
-
-MITRE ATT&CK Techniques (from OTX tags)
-
-Malware families, threat tags, references, and WHOIS data
-
-Correlates data from different sources for deeper analysis.
-
-Outputs results to a CSV file for further investigation or reporting.
