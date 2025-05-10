@@ -24,7 +24,7 @@ This project performs geolocation and threat intelligence analysis on a list of 
 | 27.81.7.52    | 85               | 12                          | Emotet, Trickbot | botnet, trojan   | T1071, T1059   | RU             | example@mail.com    |
 
 
-## However, for version one, all OTX data is displayed and not grouped into specific tags
+However, for version one, all OTX data is displayed and not grouped into specific tags
 
 ## Current Output
 | IP            | AbuseIPDB Score  | VirusTotal Malicious Count  | OTX Data                | 
