@@ -2,9 +2,9 @@ import pandas as pd
 import requests
 
 # listing API Keys
-abuseip_key="4634e467a820648b7f6d5d36bc3e45d940a7e1f222850445ab32c37ba4c28733fa3f16890dd362a9"
-virustotal_key="f5f09558695ac08ef0ee3ce550312b17cb0bfbfb85cdab368ec2de7eb1d2a0b4"
-otx_api_key="f7194fb612845357fc73d5a50870980b26df05b5b74ded5ed954ef24b477f600"
+abuseip_key=""
+virustotal_key=""
+otx_api_key=""
 
 # the list of IPs to analyse
 ip_add_list=[ "27.81.7.52","195.178.191.4","218.92.0.118","51.79.27.107","125.72.150.250"]
